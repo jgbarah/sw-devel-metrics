@@ -3,8 +3,17 @@
 When talking about software development metrics, there are several different aspects to consider. Among them:
 
 * How metrics are computed
+	- There is a need for an abstract description of the calculation that spans the specifics of an implementation tool
+	- For each implementation, deviations from the formal definition of a metric must be noted. For example, not all source repositories or issue trackers contain the same data or structure their heirarchies the same. Making this information visible builds trust in the metrics themselves. 
+	- The difference between metrics at the lowest level of measurement - commits, issues, issue comments, etc. - and metrics that are aimed at synthesizing composite insights from a combination of the lowest level metrics need to demonstrate a sort of "chain of custody". Deviations from repository to repository will compound as metrics are aggregated. Transparency in these matters is important. 
+	- Metric utility is important to evaluate. There are indicators outside source code repositories that may signal the likelihood of uptake for a repository, or the nature of diversity and inclusion in the repository's encasing organization. Metrics that corresond with or follow these other measures are possibly more useful if such cases are proven or evaluated. 
 * Which additional information is needed for drilling down
+	- Making data that drives a particular metric transparent back to the source is essential for building trust
+	- Aggregations of data are often used to produce metrics in the presentation layer. Making the aggregations provenance visible helps to build trust. 
 * How to visualize them
+	- Principles of visualization design include simple things in some cases. For example, showing the full length of a y-axis from zero oftentimes helps a person looking at a visualization to notice the variation is less than how it might appear if the y-axis is framed by the range of values in the data. The human centered aspects of design are important.
+	- Project comparisons have value
+	- Temporal comparisons have value and build user trust in their understanding of most metrics and their visualizations. 
 
 For example, when you have a basic metric such as "count of commits", usually you want:
 

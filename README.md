@@ -14,6 +14,9 @@ When talking about software development metrics, there are several different asp
 	- Principles of visualization design include simple things in some cases. For example, showing the full length of a y-axis from zero oftentimes helps a person looking at a visualization to notice the variation is less than how it might appear if the y-axis is framed by the range of values in the data. The human centered aspects of design are important.
 	- Project comparisons have value
 	- Temporal comparisons have value and build user trust in their understanding of most metrics and their visualizations. 
+* What is the role of probability in the presentation of metrics? 
+	- What categories of metrics are likely to be easier to understand if represented probabalistically? 
+	- Probabality has a predictive dimension, so it would seem to apply only to composite metrics. 
 
 For example, when you have a basic metric such as "count of commits", usually you want:
 
